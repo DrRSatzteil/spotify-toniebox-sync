@@ -23,7 +23,7 @@ class SpotifyRecordingHandler {
             StringBuilder command = new StringBuilder();
             command.append("stream_recorder.pl --uri '")
                     .append(track.getTrack().getUri())
-                    .append("' --silent --format mp3 --outdir ")
+                    .append("' --format mp3 --outdir ")
                     .append(spotifyHandler.getCachePath())
                     .append(" --filename ")
                     .append(filename);
